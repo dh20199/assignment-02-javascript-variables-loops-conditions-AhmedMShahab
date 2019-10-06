@@ -31,6 +31,7 @@
  * @returns {string} should be exactly "Hello!"
  */
 function hello () {
+  return ("Hello!");
   // if you want you can declare a string variable first
   // or in this case you can just return the string directly
   // with something like "return 'Hello!'"
@@ -46,6 +47,7 @@ function hello () {
  * @returns {string} a sentence that uses NAME i nits construction.
  */
 function greeting(name) {
+  return ("Hello, " + name + "!");
   // use the '+' operator to combine
   // strings.  So for instance, if I wanted to
   // say goodbye, I might write
@@ -64,6 +66,8 @@ function greeting(name) {
  * @returns {array} 
  */
 function returnArray (first, second, third) {
+  let Array= [first, second, third];
+  return Array;
   // you can define the array using "new Array ()" or just "[ , , ]"
   // don't forget to return it
 }
@@ -83,11 +87,11 @@ function returnArray (first, second, third) {
  * @returns {string} a sentence  composed from the first 3 elements of the array
  */
 function splitArray (thisArray) {
+  return (thisArray[0] + " " + thisArray[1] + " was a " + thisArray[2] + ".");
   // remember you can access individual elements of an array with
   // array[0]
   // array[1]
   // etc.
-
 }
 
 // Problem 5
@@ -100,6 +104,7 @@ function splitArray (thisArray) {
  * @returns {number} the difference of the two parameters
  */
 function subtract(number1, number2) {
+  return (number1 - number2);
   // subtract number2 from number1, and return the result.
 }
 
@@ -109,10 +114,15 @@ function subtract(number1, number2) {
 // "I can only subtract numbers."
 
 function carefulSubtract (first, second) {
+  if (typeof first !== "number" && typeof second !== "number"){
+    return ("I can only subtract numbers.");
+  } else {
+    return (first - second);
+  }
+  
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
   // "I can only subtract numbers."
-
 }
 
 
@@ -129,6 +139,16 @@ function carefulSubtract (first, second) {
  * @returns {} a meessage about unknown, or the square of unknown if it is a number
  */
 function typeTester (unknown) {
+  typetest = (typeof unknown);
+  if (typetest === "string"){
+    return (unknown + " yay!");
+  } else if (typetest === "number") {
+    return (unknown*unknown);
+  } else if (typetest === "undefined"){
+    return ("Sorry, I can\'t do anything with an undefined value.");
+  } else {
+    return ("I don\'t know how to use that kind of variable.");
+  }
   // use an if/else construction, a switch/case , or any other branching logic. Remember to
   // return a value. 
 }
