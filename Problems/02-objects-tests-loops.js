@@ -20,12 +20,12 @@
  * @returns {object} should have the properties FIRSTNAME, LASTNAME, and PROFESSION
  */
 function returnObject (first, last, prof) {
-  let object = {
+  let returnedObject = {
     firstName: first,
     lastName: last,
     profession: prof
   }
-  return object;
+  return returnedObject;
   // it might be easiest here to declare a variable
   // var o = {};
   // and then add properties to it one by one
