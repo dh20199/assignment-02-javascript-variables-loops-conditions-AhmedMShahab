@@ -62,14 +62,14 @@ function returnObject (first, last, prof) {
  * @returns {string} a sentence constructed from the object parameters 
  */
 function objectToSentence (obj) {
-  let objectSent= (obj.firstName + " " + obj.lastName + " was a " + obj.profession + ".");
+  let objectSentence= (obj.firstName + " " + obj.lastName + " was a " + obj.profession + ".");
   // remember you can refer to object properties using either of 2 methods
   // obj['propertyname']
   // or
   // obj.propertyname
   // note the quotes in the first options
   // also note: you need to change this next line!!
-  return objectSent;
+  return objectSentence;
 }
 
 // Problem 3
