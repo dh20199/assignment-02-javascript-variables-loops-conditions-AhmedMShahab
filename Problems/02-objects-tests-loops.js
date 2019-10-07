@@ -129,7 +129,7 @@ function wasWriter (obj) {
 function stringIterator (aString, aNumber) {
   let repeatString= ""
   for (let i = 0; i < aNumber; i++){
-    string += aString;}
+    repeatString += aString;}
     return repeatString; 
   // remember a basic "for" loop has this structure:
   // for (var i = 0; i< SOMETHING; i++) {...statements...  };
@@ -159,7 +159,7 @@ function stringIterator (aString, aNumber) {
 function prettyIterator (aString, aNumber) {
   let iteration= ""
   for (let i=0; i < aNumber; i++){
-    iterate += (aString + "(" + (i+1) + ")\n");}
+    iteration += (aString + "(" + (i+1) + ")\n");}
     return iteration;
 
   }
