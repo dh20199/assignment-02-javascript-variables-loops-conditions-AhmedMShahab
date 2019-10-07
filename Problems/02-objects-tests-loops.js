@@ -127,10 +127,10 @@ function wasWriter (obj) {
  * @returns {string}
  */
 function stringIterator (aString, aNumber) {
-  let string= ""
+  let repeatString= ""
   for (let i = 0; i < aNumber; i++){
     string += aString;}
-    return string; 
+    return repeatString; 
   // remember a basic "for" loop has this structure:
   // for (var i = 0; i< SOMETHING; i++) {...statements...  };
 }
