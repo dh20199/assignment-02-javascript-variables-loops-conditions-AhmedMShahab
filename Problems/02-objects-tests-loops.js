@@ -157,10 +157,10 @@ function stringIterator (aString, aNumber) {
  * @returns   {string}
  */
 function prettyIterator (aString, aNumber) {
-  let iterate= ""
+  let iteration= ""
   for (let i=0; i < aNumber; i++){
     iterate += (aString + "(" + (i+1) + ")\n");}
-    return iterate;
+    return iteration;
 
   }
   // be sure to check your results on this one; it has a trick. maybe 2. 
